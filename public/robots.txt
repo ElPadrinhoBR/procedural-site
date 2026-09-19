@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Site institucional estatico. As rotas internas usam navegacao por hash (#/rota),
+# portanto todas as paginas compartilham a URL raiz.

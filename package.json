@@ -1,0 +1,32 @@
+{
+  "name": "procedural-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site institucional da Procedural - Gestao Agil, Governanca, Pessoas e Processos",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "smoke": "vite build --ssr scripts/smoke/render-pages.tsx --outDir .smoke --logLevel warn && node .smoke/render-pages.js",
+    "build:standalone": "tsc --noEmit && vite build --config vite.config.standalone.ts"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@fontsource-variable/inter": "^5.3.0",
+    "@fontsource-variable/sora": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.0"
+  }
+}

@@ -1,0 +1,57 @@
+# Dependencias
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Cache de ferramentas
+.eslintcache
+.vite/
+
+# Variaveis de ambiente sensiveis (o .env de site estatico nao guarda segredos)
+.env.local
+.env.*.local
+
+# Arquivos gerados para o deploy no GitHub Pages
+.gh-pages-tmp/
+
+# Saida da verificacao de runtime (npm run smoke)
+.smoke/
+
+# Logs do servidor de desenvolvimento em segundo plano
+.dev-server*.log
+.dev-server.pid
+
+# Build standalone gerado (recriar com: npm run build:standalone)
+standalone/
+
+# Material de apoio interno (nao sao necessarios para o site)
+roadmap.txt
+docs/
+Images/
+
+# Arquivos de inspecao/debug temporarios
+.inspect*.js
+.inspect*.txt
