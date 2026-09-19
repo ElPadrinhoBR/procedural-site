@@ -41,6 +41,9 @@ jobs:
 
       - name: Configurar Pages
         uses: actions/configure-pages@v5
+        with:
+          # Habilita o Pages automaticamente no primeiro deploy.
+          enablement: true
 
       - name: Empacotar artefato
         uses: actions/upload-pages-artifact@v3
